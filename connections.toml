@@ -1,0 +1,6 @@
+[DEMO_CONNECTION]
+account = "QWFRKGI.MO95753"
+user = "DEMO_USER"
+password = Demo_PWD1
+warehouse = "DEMO_WH"
+database = "DEMO_DB"
