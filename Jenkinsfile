@@ -10,7 +10,7 @@ pipeline {
         stage('Run schemachange') {
             steps {
                 sh "pip install schemachange --upgrade"
-                sh "schemachange -f migrations --${SF_CONNECTION} -c ${SF_DATABASE}.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table"
+                sh "schemachange -f migrations --connection-name ${SF_CONNECTION} -c ${SF_DATABASE}.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table"
             }
         }
     }
