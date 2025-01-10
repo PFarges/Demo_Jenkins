@@ -2,5 +2,6 @@
 account = "mp79781.eu-west-3.aws"
 user = "DEMO_USER"
 password = "Demo_PWD1"
+role = "DEMO_ROLE"
 warehouse = "DEMO_WH"
 database = "DEMO_DB"
