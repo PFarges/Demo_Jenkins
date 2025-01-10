@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Run schemachange') {
             steps {
+                sh "chmod 0600 connections.toml"
                 sh "pip install schemachange --upgrade"
                 sh "schemachange -f migrations --connections-file-path connections.toml --connection-name ${SF_CONNECTION} -c ${SF_DATABASE}.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table"
             }
